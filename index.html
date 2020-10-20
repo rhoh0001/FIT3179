@@ -7,6 +7,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/vega-lite@4"></script>
 	<script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
+
 <body>
 <div id="vis"></div>
 	<script type="text/javascript">
@@ -20,8 +21,8 @@
 <body>
 <div id="vis2"></div>
 	<script type="text/javascript">
-  var spec2 = "visualization.vl (2).json";
-  vegaEmbed('#vis', spec2).then(function(result) {
+  var spec = "visualization.vl (2).json";
+  vegaEmbed('#vis', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
