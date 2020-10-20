@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Top 10 Countries by GDP per capita.",
+  "data": {"url": "https://dl.dropbox.com/s/wldjq4i1ant99nh/2018.top20.csv"},
+  "width": 900,
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country or region",
+      "type": "nominal",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {"field": "Score", "type": "quantitative"},
+    "color": {
+      "field": "GDP per capita",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [1.3, 1.35, 1.4, 1.45, 1.5],
+        "range": [
+          "#E6B0AA",
+          "#D98880",
+          "#CD6155",
+          "#A93226 ",
+          "#A93226",
+          "#641E16"
+        ]
+      }
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,26 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Bottom 10 Countries by Happiness Score.",
+  "data": {"url": "https://dl.dropbox.com/s/jf79grmiv0m0o0u/2018.bottom20.csv"},
+  "width": 900,
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country or region",
+      "type": "nominal",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {"field": "Score", "type": "quantitative"},
+    "color": {
+      "field": "Score",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [3.3, 3.4, 3.5, 3.6],
+        "range": ["#fdbe85", "#fd8d3c", "#e6550d", "#a63603"]
+      }
+    }
+  },
+  "config": {}
+}

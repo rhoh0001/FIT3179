@@ -1,0 +1,33 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "description": "Bottom 10 Countries by GDP per capita.",
+  "data": {"url": "https://dl.dropbox.com/s/jf79grmiv0m0o0u/2018.bottom20.csv"},
+  "width": 900,
+  "height": 300,
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "field": "Country or region",
+      "type": "nominal",
+      "axis": {"labelAngle": 0}
+    },
+    "y": {"field": "Score", "type": "quantitative"},
+    "color": {
+      "field": "GDP per capita",
+      "type": "quantitative",
+      "scale": {
+        "type": "threshold",
+        "domain": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7],
+        "range": [
+          "#E6B0AA",
+          "#D98880",
+          "#CD6155",
+          "#A93226 ",
+          "#A93226",
+          "#641E16"
+        ]
+      }
+    }
+  },
+  "config": {}
+}
