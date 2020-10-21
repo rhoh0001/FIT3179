@@ -1,0 +1,61 @@
+{
+ "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+ "width": 500,
+ "height": 400,
+ "title": "Happiness Score of the world in correlation to GDP and Generosity in 2018",
+ "data": {
+ "url": "https://dl.dropbox.com/s/wldjq4i1ant99nh/2018.top20.csv"
+ },
+ "selection": {
+ "continent_highlight": {
+ "type": "multi",
+ "fields": ["Country or region"],
+ "bind": "legend"
+ }
+ },
+ "mark": "circle",
+ "encoding": {
+ "x": {
+ "field": "GDP per capita",
+ "type": "quantitative",
+ "title": "GDP per capita",
+ "axis": {"tickCount": 7},
+ "scale": {"type": "linear", "domain": [1.2, 1.5]}},
+ "y": {
+ "field": "Generosity",
+ "type": "quantitative",
+ "axis": {"tickCount": 6},
+ "scale": {"type": "linear", "domain": [0, 0.4]}},
+ "color": {
+ "field": "Country or region",
+ "type": "nominal"
+ },
+ "opacity": {
+ "condition": {"selection": "continent_highlight", "value": 0.6},
+ "value": 0.2
+ },
+ "size": {
+ "field": "Score",
+ "type": "quantitative",
+ "title":"Happiness Score",
+ "scale": {
+ "type": "threshold",
+ "domain": [1,2,3,4, 5, 6, 7, 8],
+ "range": [10, 50, 100, 150, 200, 250,300,350,400]
+ },
+ "legend": {"format": ".1s"}},
+ "tooltip": [
+ {"field": "Country or region", "type": "nominal"},
+ {"field": "GDP per capita", "type": "quantitative", "format": ","},
+ {"field": "Healthy life expectancy", "type": "quantitative", "format": ","},
+ {"field": "Generosity", "type": "quantitative", "format": ","},
+ {"field": "Freedom to make life choices", "type": "quantitative", "format": ","},
+ {
+ "field": "Score",
+ "type": "quantitative",
+ "format": ".2f"
+ }
+ ]
+
+ }
+}
