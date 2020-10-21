@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": "Happiness Score Of the World",
+  "title": "Happiness Score Of the World in 2018",
   "width": 800,
   "height": 600,
   "data": {
@@ -17,8 +17,8 @@
       }
     }
   ],
-  "projection": {"type": "equirectangular"},
-  "mark": {"type": "geoshape"},
+  "projection": {"type": "equalEarth"},
+  "mark": {"type": "geoshape","stroke":"light grey"},
   "encoding": {
     "color": {
       "field": "Score",
