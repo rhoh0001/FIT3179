@@ -18,6 +18,13 @@
     }
   ],
   "projection": {"type": "equalEarth"},
+  "selection": {
+    "score_highlight": {
+      "type": "multi",
+      "fields": ["Score"],
+      "bind": "legend"
+    }
+  },
   "mark": {"type": "geoshape","stroke":"light grey"},
   "encoding": {
     "color": {
@@ -28,6 +35,10 @@
         "domain": [5, 6, 7, 8],
         "range": ["#16345F", "#224F8E", "#2E6DC4", "#3A8DFF"]
       }
+    },
+    "opacity": {
+      "condition": {"selection": "score_highlight", "value": 0.6},
+      "value": 0.2
     },
     "tooltip": [
       {
