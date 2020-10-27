@@ -1,0 +1,12 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "https://dl.dropbox.com/s/w8fqsk7bz0bencb/2018.csv"},
+  "mark": "bar",
+  "encoding": {
+    "x": {
+      "bin": true,
+      "field": "Score"
+    },
+    "y": {"aggregate": "count"}
+  }
+}
