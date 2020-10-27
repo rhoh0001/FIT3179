@@ -18,7 +18,7 @@
       "type": "quantitative",
       "title": "GDP per capita",
       "axis": {"tickCount": 7},
-      "scale": {"type": "linear", "domain": [1.2, 1.5]}
+      "scale": {"type": "linear", "domain": [0, 1.5]}
     },
     "y": {
       "field": "Generosity",
