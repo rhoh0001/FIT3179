@@ -3,7 +3,7 @@
   "width": 500,
   "height": 400,
   "title": "Top 10 Happiness Score of the world in correlation to GDP and Generosity in 2018",
-  "data": {"url": "https://dl.dropbox.com/s/wldjq4i1ant99nh/2018.top20.csv"},
+  "data": {"url": "https://dl.dropbox.com/s/4ua0zmwvp4fdr9m/2018.top10bottom10.csv"},
   "selection": {
     "continent_highlight": {
       "type": "multi",
