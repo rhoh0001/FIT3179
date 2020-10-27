@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "width": 500,
   "height": 400,
-  "title": "Top 10 Happiness Score of the world in correlation to GDP and Generosity in 2018",
+  "title": "Top & Bottom 10 Happiness Score of the world in correlation to GDP and Generosity in 2018",
   "data": {"url": "https://dl.dropbox.com/s/4ua0zmwvp4fdr9m/2018.top10bottom10.csv"},
   "selection": {
     "continent_highlight": {
