@@ -3,7 +3,7 @@
   "description": "Top 10 Countries by Happiness Score.",
   "data": {"url": "https://dl.dropbox.com/s/wldjq4i1ant99nh/2018.top20.csv"},
   "width": 600,
-  "height": 150,
+  "height": 200,
   "mark": "bar",
   "encoding": {
     "x": {

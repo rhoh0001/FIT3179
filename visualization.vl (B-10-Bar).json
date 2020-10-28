@@ -3,7 +3,7 @@
   "description": "Bottom 10 Countries by Happiness Score.",
   "data": {"url": "https://dl.dropbox.com/s/jf79grmiv0m0o0u/2018.bottom20.csv"},
   "width": 700,
-  "height": 150,
+  "height": 200,
   "mark": "bar",
   "encoding": {
     "x": {
