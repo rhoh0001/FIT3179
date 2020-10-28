@@ -71,7 +71,7 @@
     <div class="pure-g">
         <div class="pure-u-1-3">
           <div class="description description-top">
-            <h2>Happiness Score of the world during 2018 on a Choropleth Map</h2>
+            <h1 class="header">Happiness Score of the world during 2018 on a Choropleth Map</h1>
             <p>Placeholder.</p>
           </div>
         </div>
@@ -84,7 +84,7 @@
   <!-- pure grid group -->
     <div class="pure-g">
       <div class="pure-u-1-3">
-        <h2>Top 10 Countries by Happiness Score</h2>
+        <h1 class="header">Top 5 & Bottom 5 Countries by Happiness Score</h1>
         <p>Placeholder.</p>
       </div>
     </div>
@@ -94,24 +94,6 @@
     <div class="pure-g">
         <div class="pure-u-2-3">
           <div id="vis2"  class="vis-container"></div>
-        </div>
-      
-    </div>
-    <!-- end pure grid group -->
-
-  <!-- pure grid group -->
-    <div class="pure-g">
-      <div class="pure-u-1-3">
-        <h2>Bottom 10 Countries by Happiness Score</h2>
-        <p>Placeholder.</p>
-      </div>
-    </div>
-  <!-- end pure grid group -->
-
-    <!-- pure grid group -->
-    <div class="pure-g">
-        <div class="pure-u-2-3">
-          <div id="vis3"  class="vis-container"></div>
         </div>
       
     </div>
@@ -142,10 +124,8 @@
    
 <script type="text/javascript">
   var specVis1 = "./visualization.vl (Choropleth).json";
-  var specVis2= "./visualization.vl (T-10-Bar).json";
-  var specVis3= "./visualization.vl (B-10-Bar).json";
+  var specVis2= "./visualization.vl (T-5-B-5-Bar).json";
   var specVis4= "./visualization.vl (TB-10-Scatter).json";
-  var specVis5= "./visualization.vl (Hist).json";
 
 
   vegaEmbed('#vis1', specVis1, {"actions": false}).then(function(result) {
@@ -156,13 +136,7 @@
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
-  vegaEmbed('#vis3', specVis3, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
   vegaEmbed('#vis4', specVis4, {"actions": false}).then(function(result) {
-    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
-  }).catch(console.error);
-  vegaEmbed('#vis5', specVis5, {"actions": false}).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 
