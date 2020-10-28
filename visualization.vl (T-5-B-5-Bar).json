@@ -2,8 +2,8 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "description": "Top 10 Countries by Happiness Score.",
   "data": {"url": "https://dl.dropbox.com/s/pguy1eyt7bmbkyn/top5bottom5.csv"},
-  "width": 750,
-  "height": 200,
+  "width": 1000,
+  "height": 300,
   "mark": "bar",
   "encoding": {
     "x": {
