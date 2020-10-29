@@ -13,7 +13,7 @@
       "from": {
         "data": {"url": "https://dl.dropbox.com/s/w8fqsk7bz0bencb/2018.csv"},
         "key": "Country or region",
-        "fields": ["Score"]
+        "fields": ["Score","GDP per capita", "Generosity", "Healthy life expectancy", "Freedom to make life choices"]
       }
     }
   ],
@@ -35,7 +35,11 @@
         "type": "nominal",
         "title": "Country or region"
       },
-      {"field": "Score", "type": "quantitative"}
+      {"field": "Score", "type": "quantitative"},
+      {"field": "GDP per capita", "type": "quantitative"},
+      {"field": "Generosity", "type": "quantitative"},
+      {"field": "Freedom to make life choices", "type": "quantitative"},
+      {"field": "Healthy life expectancy", "type": "quantitative"}
     ]
   },
   "config": {}
