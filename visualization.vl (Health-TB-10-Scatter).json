@@ -4,13 +4,6 @@
   "height": 300,
   "title": "Top & Bottom 10 Happiness Score of the world in correlation to GDP and Generosity in 2018",
   "data": {"url": "https://dl.dropbox.com/s/4ua0zmwvp4fdr9m/2018.top10bottom10.csv"},
-  "selection": {
-    "continent_highlight": {
-      "type": "multi",
-      "fields": ["Country or region"],
-      "bind": "legend"
-    }
-  },
   "mark": "circle",
   "encoding": {
     "x": {
@@ -27,10 +20,6 @@
       "scale": {"type": "linear", "domain": [0, 0.4]}
     },
     "color": {"field": "Healthy life expectancy", "type": "quantitative"},
-    "opacity": {
-      "condition": {"selection": "continent_highlight", "value": 0.6},
-      "value": 0.2
-    },
     "size": {
       "field": "Score",
       "type": "quantitative",
